@@ -40,6 +40,17 @@ button {
   padding: .5em;
 }
 
+input {
+    margin-left: 2em;
+}
+
+input[type=radio] {
+    border: 10px;
+    width: 1em;
+    height: 1em;
+    color: red;
+}
+
 /* =================================
   Media Queries
 ==================================== */
