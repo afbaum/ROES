@@ -48,38 +48,52 @@
         </div>
 
         <div class="container">
-        <p>the model will be based on the hearing aid company that is selected</p>
+          <div class="hearingAidModel">
+            <ul> Hearing aid Model
+            </ul>
+          </div>
 
-        <p>if a RIC aid is selected we should ask if there is a custom earmold</p>
-        <ul>Parts for custom aids
-          <li>wax traps</li>
-          <li>mic covers</li>
-          <li>battery door</li>
-          <li>batter size</li>
-        </ul>
+          <div class="hearingAidStyle">
+            <input type="radio" name="haStyle" value="custom">Custom<br>
+            <input type="radio" name="haStyle" value="ric">RIC/RITE<br>
+            <input type="radio" name="haStyle" value="bte">BTE<br>
+            <input type="radio" name="haStyle" value="open">Open Fit BTE<br>
+          </div>
 
-        <ul>Parts for RIC aids
-          <li>wax traps</li>
-          <li>mic covers</li>
-          <li>battery door</li>
-          <li>batter size</li>
-          <li>reciever</li>
-          <li>dome</li>
-        </ul>
+          <div class="custom-parts">
+            <select name="custom-parts">
+              <option value="wax-filters">Wax Filters</option>
+              <option value="mic-covers">Mic Covers</option>
+              <option value="battery-door">Battery Door</option>
+            </select>
+          </div>
 
-        <ul>Parts for BTE hearing aids
-          <li>mic covers</li>
-          <li>battery door</li>
-          <li>batter size</li>
-        </ul>
+          <div class="ric-parts">
+            <select name="ric-parts">
+              <option value="wax-filters">Wax Filters</option>
+              <option value="mic-covers">Mic Covers</option>
+              <option value="battery-door">Battery Door</option>
+              <option value="receiver">Receiver</option>
+              <option value="ric-dome">Dome</option>
+            </select>
+          </div>
 
-        <ul>Parts for Open Fit BTE aids
-          <li>tubes</li>
-          <li>mic covers</li>
-          <li>battery door</li>
-          <li>batter size</li>
-          <li>dome</li>
-        </ul>
+          <div class="bte-parts">
+            <select name="bte-parts">
+              <option value="mic-covers">Mic Covers</option>
+              <option value="battery-door">Battery Door</option>
+              <option value="ear-hooks">Ear Hooks</option>
+            </select>
+          </div>
+
+          <div class="open-parts">
+            <select name="open-parts">
+              <option value="tubes">Tubes</option>
+              <option value="mic-covers">Mic Covers</option>
+              <option value="battery-door">Battery Door</option>
+              <option value="ric-dome">Dome</option>
+            </select>
+          </div>
     </div>
   </div>
 
