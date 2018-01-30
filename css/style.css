@@ -52,6 +52,16 @@ input[type=radio] {
 }
 
 /* =================================
+  Form styles
+==================================== */
+
+input[type=search] {
+  border: 1px dotted #999;
+  border-radius: 50;
+	-webkit-appearance: none;
+}
+
+/* =================================
   Media Queries
 ==================================== */
 
