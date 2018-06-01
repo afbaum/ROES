@@ -1,0 +1,37 @@
+extends layout.pug
+
+block content
+  section#content
+  // Please Register Section
+  .container-fluid.padding
+    .row.welcome.text-center
+      .col-12
+        h1.display-4 Please Register for Access to Site
+      hr
+  // Sign in form
+  .container-fluid.padding
+    .row.text-center
+      .col-12
+        form(method='POST', action='/register')
+          .form-group
+            label(for='name')
+              | Name: 
+              label
+                input#name.form-control(type='name', placeholder='first and last', name='name')
+          .form-group
+            label(for='email')
+              | email: 
+              label
+                input#email.form-control(type='email', placeholder='name@VA.gov', name='email')
+          .form-group
+            label(for='pw')
+              | Password: 
+              label
+                input#pw1.form-control(type='password', name='password')
+          .form-group
+            label(for='pw2')
+              | Confirm Password: 
+              label
+                input#pw2.form-control(type='password', name='confirmPassword')
+          button.btn.btn-primary(type='submit') Sign Up
+  

@@ -1,0 +1,50 @@
+extends layout.pug
+
+block content
+  section#content
+    // Fixed Background with link to forum
+    figure
+      .fixed-wrap
+        #fixed
+    // Welcome Section
+    .container-fluid.padding
+      .row.welcome.text-center
+        .col-12
+          h1.display-4 Hearing Aid Resources
+        hr
+        .col-12
+          p.lead
+            | Find ROES3 part numbers fast and easy.  Learn about the current hearing aids on contract.  Find information
+            | about accessories for hearing aids.
+          p
+    // ROES item section
+    div(classs='container-fluid padding')
+      .row.text-center.padding
+        .col-xs-12.col-sm-6.col-md-4
+          i.fas.fa-headphones
+          h3 ROES3 Item Number Search
+          p Find ROES3 item number for hearing aid parts.
+        .col-xs-12.col-sm-6.col-md-4
+          i.fas.fa-deaf
+          h3 Contract Hearing Aids
+          p Find informaiton about current hearing aids on contract.
+        .col-sm-12.col-md-4
+          i.fas.fa-tty
+          h3 Hearing Aid Accessories
+          p
+            | Find the Accessories that will work with your patient's hearing aids and
+            | information on how to set them up.
+    hr.my-4
+    // Comp&Pen two column section
+    .container-fluid.padding
+      .row.padding
+        .col-lg-6
+          h2 If they hear it . . . 
+          p
+            | Lost and confused by a C&P?  Find C&P information regarding dating back to the time of Kyle Dennis.
+            | Submit a question in the forum and get an answer.  Which ever way you  go find the informaiton you need here.
+          br
+          button.btn.btn-primary(type='button') More Info
+        .col-lg-6
+          img.image-fluid(src='images/books.png')
+    hr.my-4

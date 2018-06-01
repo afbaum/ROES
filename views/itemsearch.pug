@@ -1,0 +1,62 @@
+extends layout.pug
+
+block content
+  section#content
+    // Fixed Background with link to forum
+    figure
+      .fixed-wrap
+        #fixed
+    // Welcome Section
+    .container-fluid.padding
+      .row.welcome.text-center
+        .col-12
+          h1.display-4 ROES3 Item Number Search
+        hr
+        .col-12
+          p.lead
+            | Enter style, make and model of hearing aid and find ROES3 part numbers fast and easy.
+          p
+    // ROES item section
+    // Item Number Search form
+    .container-fluid.padding
+      .row.text-center
+        .col-6
+          form(method='POST', action='/itemsearch')
+            .form-group
+              label(for='styleSelect') Hearing Aid Style
+              select#styleSelect.form-control
+                option Custom
+                option RIC
+                option BTE
+            .form-group
+              label(for='makeSelect') Hearing Aid Make 
+              select#makeSelect.form-control
+                option GN Resound
+                option Signia/Sivantos/Simens
+                option Sonovo/Phonak
+                option Oticon
+                option Starkey
+                option Widex
+            button.btn.btn-primary(type='submit') Enter
+    .container-fluid.padding
+      .row.text-center
+        .col-6
+          form(method='POST', action='/itemsearch')
+            .form-group
+              label(for='makeSelect') Model
+              select#makeSelect.form-control
+                option Linx 3D 61
+            button.btn.btn-primary(type='submit') Enter
+    hr.my-4
+    // Parts two column section
+    .container-fluid.padding
+      .row.padding
+        .col-lg-6
+          h2 Receivers
+        .col-lg-6
+          h2 Domes
+        .col-lg-6
+          h2 Wax Guards
+        .col-lg-6
+          h2 Other Parts
+    hr.my-4

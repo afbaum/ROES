@@ -1,0 +1,117 @@
+extends layout.pug
+
+block content
+  section#content
+    // Image Carousel
+    #slides.carousel.slide(data-ride='carousel')
+      ul.carousel-indicators
+        li.active(data-target='#slides', data-slide-to='0')
+        li(data-target='#slides', data-slide-to='1')
+        li(data-target='#slides', data-slide-to='2')
+      .carousel-inner
+        .carousel-item.active
+          img(src='images/rose.png')
+          .carousel-caption
+            h1.display-2 ROES Lookup
+            h3
+              | Find the ROES item number for the part you need
+              h3
+                button.btn.btn-outline-light.btn-lg(type='button') Item Number Search
+        .carousel-item
+          img(src='images/animal.png')
+          .carousel-caption
+            h1.display-2  Hearing aids on Contract
+            h3  Find contract hearing aids and their functions 
+            button.btn.btn-outline-light.btn-lg(type='button') More Info
+        .carousel-item
+          img(src='images/doors.png')
+          .carousel-caption
+            h1.display-2 Comp and Pen
+            h3  Find answers to common CP Audiology Questions 
+            button.btn.btn-outline-light.btn-lg(type='button') More Info
+    // Jumbotron
+    .container-fluid
+      .row.jumbotron
+        .col-xs-12.col-sm-12.col-md-9.col-lg-9.col-xl-10
+          p.lead
+            | A website for VA Audiologists made by VA Audiologists to help improve patient care!
+        .col-xs-12.col-sm-12.col-md-3.col-lg-3.col-xl-2
+          a(href='#')
+            button.btn.btn-outline-secondary.btn-lg(type='button')  VA Audiology
+    // Welcome Section
+    .container-fluid.padding
+      .row.welcome.text-center
+        .col-12
+          h1.display-4 Work with ease.
+        hr
+        .col-12
+          p.lead
+            | Welcome to the VA Audiology Website.  VA Audiology informaiton at your finger tips.
+            | Search and explore to find the information you need fast!
+          p
+    // ROES item section
+    div(classs='container-fluid padding')
+      .row.text-center.padding
+        .col-xs-12.col-sm-6.col-md-4
+          i.fas.fa-headphones
+          h3 Hearing aids
+          p
+            | Find informaiton about hearing aids on Contract and ROES3 item number for hearing aid parts.
+        .col-xs-12.col-sm-6.col-md-4
+          i.fas.fa-deaf
+          h3 Coclear Implants
+          p
+            | Find informaiton about Cochlear Implants on Contract and ROES3 item number for hearing aid parts.
+        .col-sm-12.col-md-4
+          i.fas.fa-tty
+          h3 ALDs
+          p Find informaiton about Assitive Listening Devices on Contract through ROES3
+    hr.my-4
+    // Comp&Pen two column section
+    .container-fluid.padding
+      .row.padding
+        .col-lg-6
+          h2 If they hear it . . . 
+          p
+            | Lost and confused by a CP?  Find CP information regarding dating back to the time of Kyle Dennis.
+            | Submit a question in the forum and get an anwer.  Which ever way you  go find the informaiton you need here.
+          br
+          button.btn.btn-primary(type='button') More Info
+        .col-lg-6
+          img.image-fluid(src='images/books.png')
+    hr.my-4
+    // Meet the team
+    .container-fluid.padding
+      .row.welcome.text-center
+        .col-12
+          h1.display-4
+            | Meet the Team
+            h1
+        hr
+    // Cards
+    .container-fluid.padding
+      .row.padding
+        .col-md-4
+          .card
+            img.card-img-top(src='images/womenWorking.png')
+            .card-body
+              h4.card-title Jane Doe
+              p.card-text  info about Jane 
+              a.btn.btn-outline-secondary(href='#') See Profile
+        .col-md-4
+          .card
+            img.card-img-top(src='images/manWorking.png')
+            .card-body
+              h4.card-title Bob Doe
+              p.card-text  info about Bob 
+              a.btn.btn-outline-secondary(href='#') See Profile
+        .col-md-4
+          .card
+            img.card-img-top(src='images/monkey.png')
+            .card-body
+              h4.card-title Amanda Gray-Baum Au.D.
+              p.card-text
+                | Amanda is a practicing Audiologist at the Robley Rex VA Medical center
+                | with an interest in web development.
+              a.btn.btn-outline-secondary(href='#') See Profile
+    hr.my-4

@@ -1,108 +1,261 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Hearing aid Parts</title>
-    <link rel="stylesheet" href="css/normalize.css"></link>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"></link>
+
+    <title>Website for VA Audiologists</title>
   </head>
   <body>
-    <div class="wrap">
-      <header class="main-header">
-        <div class="container">
-          <h1>Find the ROES item number</h1>
-          <ul>
-            <li><a href="alerting.html">Alerting Systems</a></li>
-            <li><a href="#">Phones</a></li>
-            <li><a href="#">Dehumidifiers</a></li>
-            <li><a href="#">Tools</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </header>
+    <!-- Main Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#">VA Audiology</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarList">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-      <div class="container hearingAidMake">
+		<div class="collapse navbar-collapse" id="navbarList">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Hearing Aids</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Cochlear Implants</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Coding</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Tinnitus</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Comp & Pen</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Q&A</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</nav>
 
-          <button type="button" id="resound">
-            <img src="images/resound.png" alt="resound"/>
-          </button>
 
-          <button type="button" id="phonak">
-            <img src="images/phonak.png" alt="phonak">
-          </button>
 
-          <button type="button" id="oticon">
-            <img src="images/oticon.png" alt="oticon">
-          </button>
+    <!-- Image Carousel -->
+	<div id="slides" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+		<li data-target="#slides" data-slide-to="1"></li>
+		<li data-target="#slides" data-slide-to="2"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="images/rose.png">
+			<div class="carousel-caption">
+				<h1 class="display-2">ROES Lookup</h1>
+				<h3>Find the ROES item number for the part you need<h3>
+				<button type="button" class="btn btn-outline-light btn-lg">Item Number Search</button>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="images/animal.png">
+			<div class="carousel-caption">
+				<h1 class="display-2"> Hearing aids on Contract</h1>
+				<h3> Find contract hearing aids and their functions </h3>
+				<button type="button" class="btn btn-outline-light btn-lg">More Info</button>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="images/doors.png">
+			<div class="carousel-caption">
+				<h1 class="display-2">Comp and Pen</h1>
+				<h3> Find answers to common C&P Audiology Questions </h3>
+				<button type="button" class="btn btn-outline-light btn-lg">More Info</button>
+			</div>
+		</div>
+	</div>
+	</div>
 
-          <button type="button" id="starkey">
-            <img src="images/starkey.png" alt="starkey">
-          </button>
 
-          <button type="button" id="signia">
-            <img src="images/signia.png" alt="signia">
-          </button>
+    <!-- Jumbotron -->
 
-          <button type="button" id="widex">
-            <img src="images/widex.png" alt="widex">
-          </button>
-        </div>
+	<div class="container-fluid">
+	<div class="row jumbotron">
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+			<p class="lead"> A website for VA Audiologists made by VA Audiologists to help improve patient care!</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+			<a href="#"><button type="button" class="btn btn-outline-secondary btn-lg"> VA Audiology</button></a>
+		</div>
+	</div>
+	</div>
 
-          <div class="hearingAidStyle">
-            <input type="radio" name="haStyle" value="custom">Custom
-            <input type="radio" name="haStyle" value="ric">RIC/RITE<br>
-            <input type="radio" name="haStyle" value="bte">BTE
-            <input type="radio" name="haStyle" value="open">Open Fit BTE<br>
-          </div>
+    <!-- Welcome Section -->
 
-          <div class="container">
-            <div class="hearingAidModel">
-              <ul> Hearing aid Model
-              </ul>
-          </div>
+	<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class=display-4>Work with ease.</h1>
+		</div>
+		<hr>
+		<div class="col-12">
+			<p class="lead">Welcome to the VA Audiology Website.  VA Audiology informaiton at your finger tips.
+			Search and explore to find the information you need fast!<p>
+		</div>
+	</div>
+	</div>
 
-          <div class="custom-parts">
-            <select name="custom-parts">
-              <option value="wax-filters">Wax Filters</option>
-              <option value="mic-covers">Mic Covers</option>
-              <option value="battery-door">Battery Door</option>
-            </select>
-          </div>
+    <!-- ROES item section -->
 
-          <div class="ric-parts">
-            <select name="ric-parts">
-              <option value="wax-filters">Wax Filters</option>
-              <option value="mic-covers">Mic Covers</option>
-              <option value="battery-door">Battery Door</option>
-              <option value="receiver">Receiver</option>
-              <option value="ric-dome">Dome</option>
-            </select>
-          </div>
+	<div classs="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fas fa-headphones"></i>
+			<h3>Hearing aids</h3>
+			<p>Find informaiton about hearing aids on Contract and ROES3 item number for hearing aid parts.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fas fa-deaf"></i>
+			<h3>Coclear Implants</h3>
+			<p>Find informaiton about Cochlear Implants on Contract and ROES3 item number for hearing aid parts.</p>
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<i class="fas fa-tty"></i>
+			<h3>ALDs</h3>
+			<p>Find informaiton about Assitive Listening Devices on Contract through ROES3</p>
+		</div>
+	</div>
+	</div>
+	<hr class="my-4">
 
-          <div class="bte-parts">
-            <select name="bte-parts">
-              <option value="mic-covers">Mic Covers</option>
-              <option value="battery-door">Battery Door</option>
-              <option value="ear-hooks">Ear Hooks</option>
-            </select>
-          </div>
+     <!-- Comp&Pen two column section -->
 
-          <div class="open-parts">
-            <select name="open-parts">
-              <option value="tubes">Tubes</option>
-              <option value="mic-covers">Mic Covers</option>
-              <option value="battery-door">Battery Door</option>
-              <option value="ric-dome">Dome</option>
-            </select>
-          </div>
-    </div>
-  </div>
-  <footer class="main-footer">
-    <div class="container">
-      <span>&copy;2017 Amanda Gray-Baum, Au.D.</span>
-    </div>
-  </footer
+	<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-lg-6">
+			<h2>If they hear it . . . </h2>
+			<p>Lost and confused by a C&P?  Find C&P information regarding dating back to the time of Kyle Dennis.
+			Submit a question in the forum and get an anwer.  Which ever way you  go find the informaiton you need here.</P>
+			<br>
+			<button type="button" class="btn btn-primary">More Info</button>
 
-  <script src="js/app.js"></script>
+		</div>
+		<div class="col-lg-6">
+			<img src="images/books.png" class="image-fluid">
+		</div>
+	</div>
+	</div>
 
+    <hr class="my-4">
+
+
+    <!-- Meet the team -->
+
+	<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Meet the Team<h1>
+		</div>
+		<hr>
+	</div>
+	</div>
+
+    <!-- Cards -->
+
+	<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="images/womenWorking.png">
+				<div class="card-body">
+					<h4 class="card-title">Jane Doe</h4>
+					<p class="card-text"> info about Jane </p>
+					<a href="#" class="btn btn-outline-secondary">See Profile</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="images/manWorking.png">
+				<div class="card-body">
+					<h4 class="card-title">Bob Doe</h4>
+					<p class="card-text"> info about Bob </p>
+					<a href="#" class="btn btn-outline-secondary">See Profile</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="images/monkey.png">
+				<div class="card-body">
+					<h4 class="card-title">Amanda Gray-Baum Au.D.</h4>
+					<p class="card-text"> Amanda is a practicing Audiologist at the Robley Rex VA Medical center
+					with an interest in web development. </p>
+					<a href="#" class="btn btn-outline-secondary">See Profile</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+    <hr class="my-4">
+
+    <!-- Connect -->
+
+	<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-12">
+			<h2>Connect</h2>
+		</div>
+		<div class="col-12 social padding">
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-slack"></i></a>
+			<a href="#"><i class="fab fa-google-plus-g"></i></a>
+		</div>
+	</div>
+	</div>
+
+    <!-- footer -->
+	<footer>
+		<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-6">
+				<hr class="light">
+				<h5>Webmaster</h5>
+				<hr class="light">
+				<p>Amanda Gray-Baum Au.D</p>
+			</div>
+			<div class="col-md-6">
+				<hr class="light">
+				<h5>Last Update</h5>
+				<hr class="light">
+				<p>02 May 2018</p>
+			</div>
+			<div class="col-12">
+				<hr class="light">
+				<h5>&copy; afbaum.inc</h5>
+			</div>
+		</div>
+		</div>
+	</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
