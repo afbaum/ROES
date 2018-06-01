@@ -2,11 +2,10 @@
 // Main Navigation
 nav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-top
   .container-fluid
-    if name 
-      a.navbar-brand(href='#') Logout
-      h3 Welcome #{name}
-    else 
-      a.navbar-brand(href='./register') Login
+    if currentUser
+      a.btn.btn-light.pull-md-right(href='/logout') Log Out
+    else
+      a.btn.btn-light.pull-md-right(href='/login') Sign Up
     button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarList')
       span.navbar-toggler-icon
     #navbarList.collapse.navbar-collapse
@@ -18,9 +17,9 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-top
         li.nav-item
           a.nav-link(href='#') Cochlear Implants
         li.nav-item
-          a.nav-link(href='#') Coding
-        li.nav-item
           a.nav-link(href='#') Tinnitus
+        li.nav-item
+          a.nav-link(href='#') Coding
         li.nav-item
           a.nav-link(href='#') Comp & Pen
         li.nav-item
