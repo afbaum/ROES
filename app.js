@@ -4,10 +4,10 @@ const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
 
 //mongodb connection
-// mongoose.connect('mongodb://admin:admin@ds237660.mlab.com:37660/#');
-// const db = mongoose.connection;
+mongoose.connect('mongodb://admin:mic530gra@ds259085.mlab.com:59085/hearingaids');
+const db = mongoose.connection;
 //mongo error
-// db.on('error', console.error.bind(console, 'connection error:'));
+db.on('error', console.error.bind(console, 'connection error:'));
 
 const app = express();
 
